@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Docker and Kubernetes Animation</title>
+  <style>
+    body {
+      background-color: #5391FE; /* Docker theme color */
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+        color: white;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .icon {
+      width: 200px;
+      height: 200px;
+      margin: 50px;
+      transition: transform 1s ease-in-out; /* Adjusted animation speed */
+      border-radius: 50px;
+    }
+    .icon:hover {
+      transform: rotate(180deg);
+    }
+    #dockerIcon {
+      background-image: url('./docker.svg'); /* Local Docker icon */
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    #kubernetesIcon {
+      background-image: url('./kubernetes.svg'); /* Local Kubernetes icon */
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .title {
+      text-align: center;
+      margin-top: 50px;
+      color: white;
+      font-size: 60px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
 <body>
+  <h1 class="title">Docker and Kubernetes (2)</h1>
 
-<h1>Docker and Kubernetes Workshop</h1>
-<p>This second website also works!</p>
-
+  <div class="container">
+    <div>
+        <h2 class="icon-title">Docker</h2>
+        <a href="https://www.docker.com" target="_blank" rel="noopener noreferrer">
+            <div class="icon" id="dockerIcon"></div>
+          </a>
+          
+    </div>
+    
+    <div>
+        <h2 class="icon-title">Kubernetes</h2>
+        <a href="https://kubernetes.io" target="_blank" rel="noopener noreferrer">
+            <div class="icon" id="kubernetesIcon"></div>
+          </a>
+          
+    </div>
+    
+  </div>
 </body>
 </html>
