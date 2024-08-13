@@ -4,17 +4,17 @@ metadata:
   name: nginxv2
   labels:
     app: demo
-    tier: frontend
+    tier: backend
     version: v2
 spec:
   replicas: 3
   selector:
     matchLabels:
-      tier: frontend
+      tier: backend
   template:
     metadata:
       labels:
-        tier: frontend
+        tier: backend
     spec:
       containers:
       - name: nginx

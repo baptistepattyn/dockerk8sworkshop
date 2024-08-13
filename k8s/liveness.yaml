@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   labels:
     test: liveness
-  name: liveness-exec3
+  name: liveness
 spec:
   containers:
   - name: liveness
@@ -19,5 +19,4 @@ spec:
         - /tmp/healthy
       initialDelaySeconds: 5
       periodSeconds: 5
-      failureThreshold: 3
 
